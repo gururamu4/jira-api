@@ -8,7 +8,7 @@
     "start:test": "cross-env NODE_ENV='test' DB_DATABASE='jira_test' npm start",
     "start:dev": "node -r build/index.js",
     "start": "node -r dotenv/config .",
-    "build": "del -rf dist && tsc",
+    "build": "rm -rf dist && tsc",
     "pre-commit": "lint-staged"
   },
   "engines": {
