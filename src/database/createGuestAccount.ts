@@ -8,17 +8,17 @@ const seedUsers = (): Promise<User[]> => {
     createEntity(User, {
       email: 'blackpearl@jira.guest',
       name: 'Cap. Jack Sparrow',
-      avatarUrl: 'https://ohmy.disney.com/wp-content/uploads/2014/10/Q3-Jack-Sparrow.png',
+      avatarUrl: 'https://ibb.co/9H9BXbC',
     }),
     createEntity(User, {
       email: 'batman@jira.guest',
       name: 'BatMan',
-      avatarUrl: 'https://lh3.googleusercontent.com/proxy/xlEVHkXD8d_WpHQ702UOhsRtv5WCUoxSN0WvWpomsNcheLxRf2X9RJ7j0VzxSFUYbBOzS6ZnVxW4kwVIlTojgMLSuSbsmzcRWI_NOyWLd3cxLYNAkNzWndU',
+      avatarUrl: 'https://ibb.co/MRfDtVR',
     }),
     createEntity(User, {
       email: 'buzz@jira.guest',
       name: 'Buzz LightYear',
-      avatarUrl: 'https://sslimages.shoppersstop.com/sys-master/images/h29/ha2/14451947765790/205753192_9900.jpg_1088Wx1632H',
+      avatarUrl: 'https://ibb.co/mtBFpcR',
     }),
   ];
   return Promise.all(users);

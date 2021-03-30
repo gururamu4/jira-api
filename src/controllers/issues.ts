@@ -3,7 +3,7 @@ import { catchErrors } from 'errors';
 import { updateEntity, deleteEntity, createEntity, findEntityOrThrow } from 'utils/typeorm';
 
 export const getProjectIssues = catchErrors(async (req, res) => {
-  let { projectId } = req.currentUser;
+  let { projectId }: any = req.currentUser;
   const { searchTerm } = req.query;
   if (req.query.projectId) projectId = req.query.projectId;
   let whereSQL = 'issue.projectId = :projectId';
